@@ -11,7 +11,7 @@ public class PopUpWindow : MonoBehaviour
     [SerializeField] GameObject UIPanelForWrongObj;
     [SerializeField] GameObject UIPanelForRightObj;
     [SerializeField] GameObject rightAnswerObj;
-    [SerializeField] TextMeshProUGUI answer_tmp;
+    TextMeshProUGUI answer_tmp;
     public Action OnClosedPopUpWindow;
 
     private void Awake()

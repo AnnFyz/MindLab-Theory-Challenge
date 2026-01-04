@@ -15,9 +15,10 @@ public class RiddleManager : MonoBehaviour
     [SerializeField] RiddleController[] reorginizedRiddles;
     public static RiddleController selectedRiddle;
     public RiddleController currentSelectedRiddle;
-    public Action OnFinishedGame;
     [SerializeField] int indexOfSelectedRiddle = 0;
     [SerializeField] bool wasOpenedAllRiddles = false;
+    public Action OnFinishedGame;
+    public static Action OnSelectedRiddle;
     private void Awake()
     {
 
@@ -49,6 +50,7 @@ public class RiddleManager : MonoBehaviour
         AddAllCreatedCards();
         ReorganizeCreatedRiddles();
         selectedRiddle = reorginizedRiddles[0];
+        OnSelectedRiddle?.Invoke();
 
     }
 

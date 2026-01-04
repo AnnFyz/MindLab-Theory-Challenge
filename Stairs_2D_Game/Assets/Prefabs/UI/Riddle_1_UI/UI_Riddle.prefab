@@ -1248,7 +1248,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4607437257340927665}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
   m_ConstrainProportionsScale: 1
@@ -2009,8 +2009,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Question
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
-  m_sharedMaterial: {fileID: -2926019417389356813, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fbbf2399365255848bf32b2747c80426, type: 2}
+  m_sharedMaterial: {fileID: 4915479773548051919, guid: fbbf2399365255848bf32b2747c80426, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

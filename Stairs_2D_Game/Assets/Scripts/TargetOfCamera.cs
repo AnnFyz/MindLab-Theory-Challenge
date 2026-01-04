@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class TargetOfCamera : MonoBehaviour
 {
+    [SerializeField] private float followSpeed = 5;
     RectTransform selectedCardRectTransform;
-    void Start()
+
+    private void OnEnable()
     {
-        selectedCardRectTransform = CardManager.selectedCard.GetComponent<RectTransform>();
-        transform.position = selectedCardRectTransform.transform.position;
+        CardManager.OnSelectedCard += SetTarget;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void OnDisable()
+    {
+        CardManager.OnSelectedCard -= SetTarget;
+    }
+    void LateUpdate()
+    {
+        selectedCardRectTransform = CardManager.selectedCard.GetComponent<RectTransform>();
+        transform.position = Vector3.Lerp(
+        transform.position,
+        selectedCardRectTransform.position,
+        Time.deltaTime * followSpeed
+        );
+    }
+
+    void SetTarget()
     {
         selectedCardRectTransform = CardManager.selectedCard.GetComponent<RectTransform>();
         transform.position = selectedCardRectTransform.transform.position;

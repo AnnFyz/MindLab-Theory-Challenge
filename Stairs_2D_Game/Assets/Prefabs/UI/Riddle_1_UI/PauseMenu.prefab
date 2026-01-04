@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Zurueck zum \r\nMenue\r\n"
+  m_text: "Zur\xFCck zum \r\nMen\xFC\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fbbf2399365255848bf32b2747c80426, type: 2}
   m_sharedMaterial: {fileID: 4915479773548051919, guid: fbbf2399365255848bf32b2747c80426, type: 2}

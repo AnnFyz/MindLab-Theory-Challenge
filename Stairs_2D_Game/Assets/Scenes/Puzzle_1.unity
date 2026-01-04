@@ -1019,8 +1019,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ngjngjfjffffffffffffffffffff
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fbbf2399365255848bf32b2747c80426, type: 2}
-  m_sharedMaterial: {fileID: 4915479773548051919, guid: fbbf2399365255848bf32b2747c80426, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
+  m_sharedMaterial: {fileID: -2926019417389356813, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2047,8 +2047,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
-  m_sharedMaterial: {fileID: -2926019417389356813, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fbbf2399365255848bf32b2747c80426, type: 2}
+  m_sharedMaterial: {fileID: 4915479773548051919, guid: fbbf2399365255848bf32b2747c80426, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5179,7 +5179,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 101
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6170,8 +6170,8 @@ MonoBehaviour:
   m_text: 'Schuth, M.; Buerakov, B.: Handbuch Optische Messtechnik, Carl Hanser Verlag,
     2017'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
+  m_sharedMaterial: {fileID: -2926019417389356813, guid: 501e9b5bd999bbd4590d332d867f7592, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11874,7 +11874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Zurueck zum \nMenue"
+  m_text: "Zur\xFCck zum \nMen\xFC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fbbf2399365255848bf32b2747c80426, type: 2}
   m_sharedMaterial: {fileID: 4915479773548051919, guid: fbbf2399365255848bf32b2747c80426, type: 2}

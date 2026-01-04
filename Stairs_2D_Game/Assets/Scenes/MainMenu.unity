@@ -403,6 +403,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2723574309356533430, guid: 3739f4b10ddff7844932d349ec2037d8, type: 3}
+      propertyPath: m_text
+      value: "Zur\xFCck zum Men\xFC\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 3892214432381183296, guid: 3739f4b10ddff7844932d349ec2037d8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -450,6 +454,10 @@ PrefabInstance:
     - target: {fileID: 6170910512058384390, guid: 3739f4b10ddff7844932d349ec2037d8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829833114413258544, guid: 3739f4b10ddff7844932d349ec2037d8, type: 3}
+      propertyPath: m_text
+      value: "R\xE4tsel"
       objectReference: {fileID: 0}
     - target: {fileID: 7944152672474499612, guid: 3739f4b10ddff7844932d349ec2037d8, type: 3}
       propertyPath: m_Name
