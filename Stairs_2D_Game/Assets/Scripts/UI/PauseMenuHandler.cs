@@ -6,7 +6,7 @@ public class PauseMenuHandler : MonoBehaviour
 {
     [SerializeField] int sceneToLoad = 1;
     [SerializeField] GameObject Panel;
-    [SerializeField] GameObject Logos;
+    //[SerializeField] GameObject Logos;
     private void Start()
     {
         DeactivatePanel();
@@ -16,7 +16,7 @@ public class PauseMenuHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Tab))
         {
-            ActivatePanel();
+            TogglePanel();
         }
     }
     public void Quit()
@@ -24,15 +24,24 @@ public class PauseMenuHandler : MonoBehaviour
         Application.Quit();
     }
 
+    void TogglePanel()
+    {
+        if (Panel.activeSelf)
+        {
+            DeactivatePanel();
+        }
+        else
+        {
+            ActivatePanel();
+        }
+    }
     public void ActivatePanel()
     {
         Panel.SetActive(true);
-        Logos.SetActive(true);
     }
 
     public void DeactivatePanel()
     {
         Panel.SetActive(false);
-        Logos.SetActive(false);
     }
 }

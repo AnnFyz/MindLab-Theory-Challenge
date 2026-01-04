@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7169e1788aa910b40876a86d21a6d03e, type: 3}
   m_Name: "Puzzle_1_Wei\xDFlichtinterferometrie"
   m_EditorClassIdentifier: 
-  nameOfPuzzle: "Wei\xDFlichtinterferometrie"
+  nameOfPuzzle: Weisslichtinterferometrie
   slotPref:
   - {fileID: 3076531760233085634, guid: 8982f1f1ba1b40046aa2d43d3d5233a3, type: 3}
   - {fileID: 3076531760233085634, guid: bee491ce625caf646984301448b4ca95, type: 3}
