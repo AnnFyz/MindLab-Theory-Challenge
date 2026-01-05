@@ -97,7 +97,8 @@ public class CardManager : MonoBehaviour
         foreach (var group in CardGroups)
         {
 
-            AmountOfCardsToInstantiate += group.currentAmountOfCardsOfThisType;
+            //AmountOfCardsToInstantiate += group.currentAmountOfCardsOfThisType;
+            AmountOfCardsToInstantiate = 12;
         }
     }
     void SetupCards()
@@ -111,7 +112,8 @@ public class CardManager : MonoBehaviour
             foreach (var group in CardGroups)
             {
 
-                for (int i = 0; i < group.currentAmountOfCardsOfThisType; i++)
+                //for (int i = 0; i < group.currentAmountOfCardsOfThisType; i++)
+                for (int i = 0; i < 3; i++)
                 {
                    
                     group.GetAssignment();

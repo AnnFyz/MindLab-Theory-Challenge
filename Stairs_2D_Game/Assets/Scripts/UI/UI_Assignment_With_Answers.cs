@@ -80,8 +80,8 @@ public class UI_Assignment_With_Answers : MonoBehaviour
 
    public void RaiseOnWrongAnswerEvent()
     {
-        int index = CardManager.selectedCard.assingnment.assignmentWithAnswers.IndexOfRightAnswer;
-        OnWrongAnswer?.Invoke(CardManager.selectedCard.assingnment.assignmentWithAnswers.Answers[index]);
+        int index = CardManager.selectedCard.assignment.assignmentWithAnswers.IndexOfRightAnswer;
+        OnWrongAnswer?.Invoke(CardManager.selectedCard.assignment.assignmentWithAnswers.Answers[index]);
         ResultsHandler.Instance.AddWrongAnswer(CardManager.selectedCard.cardGroupIndex);
         //ResultsHandler.Instance.AddWrongAnswer(CardManager.selectedCard.assignmentType);
     }

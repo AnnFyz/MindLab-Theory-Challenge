@@ -358,6 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a8a0254ab66bb458d66fc15d0ab699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followSpeed: 5
 --- !u!1 &1202855946
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +889,10 @@ PrefabInstance:
     - target: {fileID: 7098069015897684184, guid: 6fafea0017ef18f438ac9332ba98ed66, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880124556615091453, guid: 6fafea0017ef18f438ac9332ba98ed66, type: 3}
+      propertyPath: m_Spacing
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8880124557015647757, guid: 6fafea0017ef18f438ac9332ba98ed66, type: 3}
       propertyPath: m_Pivot.x

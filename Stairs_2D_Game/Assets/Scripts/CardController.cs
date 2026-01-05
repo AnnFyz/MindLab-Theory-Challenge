@@ -6,12 +6,10 @@ using UnityEngine.UI;
 public class CardController : MonoBehaviour
 {
     public Assignment assignmentType;
-    public DiffAssignments assingnment;
-    //public GameObject UIPanel;
+    public DiffAssignments assignment;
     public bool isCardActivated = false;
-    //public bool isCardDeactivared = false;
     public int cardGroupIndex;
-
+    [SerializeField] string answer;
 
     private void Start()
     {
@@ -30,9 +28,8 @@ public class CardController : MonoBehaviour
     public void Setup(CardGroup_SO group, Assignment typeOfAssignment, DiffAssignments assignments, int index)
     {
         assignmentType = typeOfAssignment;
-        assingnment = assignments;
+        assignment = assignments;
         this.GetComponentInChildren<Image>().color = group.groupColor;
-        //cardGroupIndex = group.numberOfAssignmentGroup;
         cardGroupIndex = index;
     }
 
@@ -44,20 +41,21 @@ public class CardController : MonoBehaviour
         {
 
 
-            if (assignmentType == Assignment.Assignment_With_Answer_Options && assingnment.assignmentWithAnswers != null)
+            if (assignmentType == Assignment.Assignment_With_Answer_Options && assignment.assignmentWithAnswers != null)
             {
-                UI_Assignment_With_Answers.Instance.ActivateUIPanel(assingnment.assignmentWithAnswers.Question, assingnment.assignmentWithAnswers.Answers[0], assingnment.assignmentWithAnswers.Answers[1], assingnment.assignmentWithAnswers.Answers[2], assingnment.assignmentWithAnswers.sprite);
-
+                UI_Assignment_With_Answers.Instance.ActivateUIPanel(assignment.assignmentWithAnswers.Question, assignment.assignmentWithAnswers.Answers[0], assignment.assignmentWithAnswers.Answers[1], assignment.assignmentWithAnswers.Answers[2], assignment.assignmentWithAnswers.sprite);
+                answer = assignment.assignmentWithAnswers.IndexOfRightAnswer.ToString();
             }
             else if (assignmentType == Assignment.Assignment_With_Number_Input)
             {
-                UI_Assignment_WithInput.Instance.ActivateUIPanel(assingnment.assignmentWithUserInput_Number.Question, assingnment.assignmentWithUserInput_Number.sprite);
+                UI_Assignment_WithInput.Instance.ActivateUIPanel(assignment.assignmentWithUserInput_Number.Question, assignment.assignmentWithUserInput_Number.sprite);
+                answer = assignment.assignmentWithUserInput_Number.RightNumber.ToString();
 
             }
             else if (assignmentType == Assignment.Assignment_With_Text_Input)
             {
-                UI_Assignment_WithInput.Instance.ActivateUIPanel(assingnment.assignmentWithUserInput_Text.Question, assingnment.assignmentWithUserInput_Text.sprite);
-
+                UI_Assignment_WithInput.Instance.ActivateUIPanel(assignment.assignmentWithUserInput_Text.Question, assignment.assignmentWithUserInput_Text.sprite);
+                answer = assignment.assignmentWithUserInput_Text.RightAnswer;
             }
         }
     }

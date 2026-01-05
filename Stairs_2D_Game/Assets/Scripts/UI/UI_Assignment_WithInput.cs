@@ -114,14 +114,14 @@ public class UI_Assignment_WithInput : MonoBehaviour
     {
         if (CardManager.selectedCard.assignmentType == Assignment.Assignment_With_Number_Input)
         {
-            OnWrongAnswer?.Invoke(CardManager.selectedCard.assingnment.assignmentWithUserInput_Number.RightNumber.ToString());
+            OnWrongAnswer?.Invoke(CardManager.selectedCard.assignment.assignmentWithUserInput_Number.RightNumber.ToString());
             //ResultsHandler.Instance.AddWrongAnswer(CardManager.selectedCard.assignmentType);
             ResultsHandler.Instance.AddWrongAnswer(CardManager.selectedCard.cardGroupIndex);
         }
 
         else if (CardManager.selectedCard.assignmentType == Assignment.Assignment_With_Text_Input)
         {
-            OnWrongAnswer?.Invoke(CardManager.selectedCard.assingnment.assignmentWithUserInput_Text.RightAnswer);
+            OnWrongAnswer?.Invoke(CardManager.selectedCard.assignment.assignmentWithUserInput_Text.RightAnswer);
             //ResultsHandler.Instance.AddWrongAnswer(CardManager.selectedCard.assignmentType);
             ResultsHandler.Instance.AddWrongAnswer(CardManager.selectedCard.cardGroupIndex);
         }
@@ -130,12 +130,12 @@ public class UI_Assignment_WithInput : MonoBehaviour
 
     void CheckUserInputWithNumbers()
     {
-        if(savedUserInputNumber == CardManager.selectedCard.assingnment.assignmentWithUserInput_Number.RightNumber)
+        if(savedUserInputNumber == CardManager.selectedCard.assignment.assignmentWithUserInput_Number.RightNumber)
         {
             //Debug.Log("Right Answer  (numbers)");
             RaiseOnAnsweredQuestionEvent();
         }
-        else if (savedUserInputNumber != CardManager.selectedCard.assingnment.assignmentWithUserInput_Number.RightNumber)
+        else if (savedUserInputNumber != CardManager.selectedCard.assignment.assignmentWithUserInput_Number.RightNumber)
         {
             //Debug.Log("Wrong Answer  (numbers), the right answer: " + CardManager.selectedCard.assingnment.assignmentWithUserInput_Number.RightNumber);
             RaiseOnWrongAnswerEvent();
@@ -155,12 +155,12 @@ public class UI_Assignment_WithInput : MonoBehaviour
 
     void CheckUserInputWithText()
     {
-        if (savedUserInputText == CardManager.selectedCard.assingnment.assignmentWithUserInput_Text.RightAnswer)
+        if (savedUserInputText == CardManager.selectedCard.assignment.assignmentWithUserInput_Text.RightAnswer)
         {
             //Debug.Log("Right Answer (text)");
             RaiseOnAnsweredQuestionEvent();
         }
-        else if (savedUserInputText != CardManager.selectedCard.assingnment.assignmentWithUserInput_Text.RightAnswer)
+        else if (savedUserInputText != CardManager.selectedCard.assignment.assignmentWithUserInput_Text.RightAnswer)
         {
             //Debug.Log("Wrong Answer (text), the right answer: " + CardManager.selectedCard.assingnment.assignmentWithUserInput_Text.RightAnswer);
             RaiseOnWrongAnswerEvent();

@@ -23,7 +23,7 @@ public class AnswerButtonCheckerForAssignmentsWithAnswers : MonoBehaviour
     {
 
         string text = gameObject.GetComponentInChildren<TextMeshProUGUI>().text;
-        int index = CardManager.selectedCard.assingnment.assignmentWithAnswers.IndexOfRightAnswer;
+        int index = CardManager.selectedCard.assignment.assignmentWithAnswers.IndexOfRightAnswer;
         //Debug.Log("Text on the button:" + text);
         //if (cardIndex == CardManager.selectedCard.assingnment.assignmentWithAnswers.Answers[index])
         if (cardIndex == index)
