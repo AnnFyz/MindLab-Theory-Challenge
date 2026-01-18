@@ -6,7 +6,7 @@ public class PauseMenuHandler : MonoBehaviour
 {
     [SerializeField] int sceneToLoad = 1;
     [SerializeField] GameObject Panel;
-    //[SerializeField] GameObject Logos;
+    [SerializeField] GameObject menuButton;
     private void Start()
     {
         DeactivatePanel();
@@ -24,7 +24,7 @@ public class PauseMenuHandler : MonoBehaviour
         Application.Quit();
     }
 
-    void TogglePanel()
+    public void TogglePanel()
     {
         if (Panel.activeSelf)
         {
@@ -35,13 +35,15 @@ public class PauseMenuHandler : MonoBehaviour
             ActivatePanel();
         }
     }
-    public void ActivatePanel()
+    void ActivatePanel()
     {
         Panel.SetActive(true);
+        menuButton.SetActive(false);
     }
 
-    public void DeactivatePanel()
+    void DeactivatePanel()
     {
         Panel.SetActive(false);
+        menuButton.SetActive(true);
     }
 }
